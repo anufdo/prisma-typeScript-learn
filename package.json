@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prisma:generate": "ts-node scripts/combine-prisma.ts && prisma generate",
+    "prisma:migrate:dev": "ts-node scripts/combine-prisma.ts && prisma migrate dev",
+    "prisma:migrate:deploy": "ts-node scripts/combine-prisma.ts && prisma migrate deploy",
+    "prisma:studio": "ts-node scripts/combine-prisma.ts && prisma studio",
+    "seed": "ts-node prisma/seed.ts"
   },
   "keywords": [],
   "author": "",

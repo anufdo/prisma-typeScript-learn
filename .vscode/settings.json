@@ -1,0 +1,10 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "driver": "SQLite",
+      "name": "mysql",
+      "database": "${workspaceFolder:prisma-typeScript}/prisma/dev.db"
+    }
+  ]
+}
